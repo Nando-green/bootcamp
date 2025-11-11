@@ -314,7 +314,11 @@ form button[type="submit"]:focus {
     border-radius: 8px; /* esquinas redondeadas */
     padding: 10px;
     font-size: 16px;
-    outline: none; /* quita borde azul al hacer clic */
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    font-size: 1rem;
+    white-space: nowrap; /* quita borde azul al hacer clic */
     width: 200px;
     &:hover,
     &:focus {
