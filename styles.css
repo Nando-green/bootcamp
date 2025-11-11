@@ -120,9 +120,10 @@ footer {
     }
 }
 
-article {
+.type-article {
     background-color: var(--card-bg);
-    padding: 5rem;
+    padding: 3rem;
+    margin: 20px 20px 20px 20px;
     margin-bottom: 20px;
     border-radius: 0.5rem;
     box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
