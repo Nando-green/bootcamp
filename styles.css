@@ -135,10 +135,10 @@ footer {
         border-radius: 100%;
         padding: 16px;
     }
-    p {
+    .paragraph-article {
         color: var(--text-muted); /*coloca color gris definido*/
     }
-    h3 {
+    .title-article {
         font-weight: 500;
     }
 }
@@ -171,7 +171,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    h2 {
+    .title-header {
         font-size: 0.75rem;
         font-weight: 100;
         color: var(--text-primary);
@@ -199,7 +199,7 @@ nav {
     display: flex;
     align-items: center;
 
-    a {
+    .link-nav {
         display: inline-block;
         margin-right: 30px;
         text-decoration: none;
