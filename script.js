@@ -1,13 +1,4 @@
-const botones = document.querySelectorAll(".button-apply-job");
-botones.forEach((boton) => {
-    boton.addEventListener("click", function () {
-        boton.textContent = "¡Aplicado!";
-        boton.classList.add("is-applied");
-        boton.disabled = true;
-    });
-});
-
-/*const jobsListingSection = document.querySelector(".jobs-listings");
+const jobsListingSection = document.querySelector(".jobs-listings");
 jobsListingSection.addEventListener("click", function (event) {
     const element = event.target;
     if (element.classList.contains("button-apply-job")) {
@@ -15,4 +6,22 @@ jobsListingSection.addEventListener("click", function (event) {
         element.classList.add("is-applied");
         element.disabled = true;
     }
-});*/
+});
+
+const filter =
+    document.querySelector(
+        "#filter-technology"
+    ); /*recupera el valor de la lista */
+
+filter.addEventListener("change", function () {
+    console.log(filter.value);
+});
+
+const location =
+    document.querySelector(
+        "#filter-location"
+    ); /*recupera el valor de la lista */
+
+location.addEventListener("change", function () {
+    console.log(location.value);
+});

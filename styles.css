@@ -289,7 +289,8 @@ form input {
 
     .search-bar {
         background: var(--input-bg);
-        padding: 0.25rem 0.5rem;
+
+        padding: 0.5rem 0.5rem;
         border-radius: 1rem;
     }
     .search-filters {
@@ -298,24 +299,26 @@ form input {
         margin-top: 1rem;
     }
     .search-line {
-        width: 500%;
+        width: 400%;
         max-width: 1280px;
     }
 }
 
 .style-list {
+    /*estilo de las listas*/
+    display: flex;
     background: #09f; /* color de fondo */
     color: #fff; /* color del texto */
     border: 2px solid #0d5ba8; /* borde */
     border-radius: 8px; /* esquinas redondeadas */
     padding: 10px;
-    font-size: 16px;
     cursor: pointer;
     transition: all 0.2s;
     font-family: inherit;
     font-size: 1rem;
     white-space: nowrap; /* quita borde azul al hacer clic */
     width: 200px;
+    margin-right: 20px;
     &:hover,
     &:focus {
         background-color: #1e293b;
