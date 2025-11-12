@@ -136,7 +136,8 @@ footer {
         padding: 16px;
     }
     .paragraph-article {
-        color: var(--text-muted); /*coloca color gris definido*/
+        color: var(--text-primary); /*coloca color gris definido*/
+        margin-top: 20px;
     }
     .title-article {
         font-weight: 500;
@@ -330,29 +331,13 @@ form input {
 .jobs-listings {
     border: 1 px solid rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
-    article {
-        background: none;
-        box-shadow: none;
-        border-radius: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        margin: 0;
 
-        display: flex;
-        align-items: start;
-        gap: 1rem;
-
-        small {
-            font-size: 0.875rem;
-            opacity: 0.75;
-        }
-        p {
-            margin-top: 0.5 rem;
-        }
-        &:last-child {
-            border-bottom: none;
-        }
+    small {
+        font-size: 0.875rem;
+        opacity: 0.75;
     }
 }
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -397,6 +382,7 @@ form input {
     font-family: inherit;
     font-size: 1rem;
     white-space: nowrap;
+    margin-top: 30px;
     &:hover,/* pseudo clase que significa que el raton esta encima*/
     
     &:focus {
