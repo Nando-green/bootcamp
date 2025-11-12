@@ -143,7 +143,7 @@ footer {
     }
 }
 
-h1 {
+.principal-title {
     font-size: 2rem;
     line-height: 1.2;
     text-wrap: balance;
@@ -157,7 +157,7 @@ h1 {
         color: var(--primary-light);
     }
 }
-h1 + p {
+.paragraph-space {
     text-wrap: balance;
     margin-bottom: 2rem;
     margin-bottom: 2rem;
@@ -222,7 +222,7 @@ form {
     padding-inline: 1rem;
 }
 
-form > div {
+.search-style {
     display: flex;
     align-items: center;
     background-color: var(--input-bg);
@@ -238,12 +238,13 @@ form input {
     border: none;
     outline: none;
     color: #ffff;
-    padding: 1rem 0.5rem;
+    padding: 1rem 2rem;
     font-size: 0.95rem;
     font-family: inherit;
+    border-radius: 0.5rem;
 }
 
-form input::placeholder {
+&::placeholder {
     color: #64748b;
     opacity: 1;
 }
@@ -296,11 +297,12 @@ form button[type="submit"]:focus {
     .search-bar {
         background: var(--input-bg);
         padding: 0.25rem 0.5rem;
+        border-radius: 1rem;
     }
     .search-filters {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
     form {
         width: 100%;
