@@ -1,11 +1,14 @@
-const jobsListingSection = document.querySelector(".jobs-listings");
-jobsListingSection.addEventListener("click", function (event) {
-    const element = event.target;
-    if (element.classList.contains("button-apply-job")) {
-        element.textContent = "¡Aplicado!";
-        element.classList.add("is-applied");
-        element.disabled = true;
-    }
+const jobsListingSection = document.querySelectorAll(".jobs-listings");
+
+jobsListingSection.forEach((section) => {
+    section.addEventListener("click", function (event) {
+        const element = event.target.closest(".button-apply-job");
+        if (element) {
+            element.textContent = "¡Aplicado!";
+            element.classList.add("is-applied");
+            element.disabled = true;
+        }
+    });
 });
 
 const filter =
