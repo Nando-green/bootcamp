@@ -10,6 +10,7 @@
         <title>Empleos</title>
         <script type="module" src="./script.js"></script>
     </head>
+
     <body>
         <header>
             <h1 class="principal-title">
@@ -45,7 +46,7 @@
         </header>
         <main>
             <section class="jobs-search">
-                <h1 class="main-title">Encuentra tu próximo trabajo</h1>
+                <h1 class="title-big">Encuentra tu próximo trabajo</h1>
                 <p class="paragraph-title paragraph-space">
                     Explora miles de oportunidades en el sector tecnológico
                 </p>
@@ -78,7 +79,7 @@
                     <div class="search-filters">
                         <select
                             class="style-list"
-                            name="technology"
+                            name="filter-technology"
                             id="filter-technology"
                         >
                             <option value="" selected disabled hidden>
@@ -91,13 +92,13 @@
                         </select>
                         <select
                             class="style-list"
-                            name="location"
+                            name="filter-location"
                             id="filter-location"
                         >
                             <option value="" selected disabled hidden>
                                 Ubicación
                             </option>
-                            <option value="javascript">Remoto</option>
+                            <option value="remoto">Remoto</option>
                             <option value="cdmx">Ciudad de Mexico</option>
                             <option value="quito">Quito</option>
                             <option value="bogota">Bogota</option>
@@ -112,14 +113,15 @@
                             </option>
                             <option value="junior">Junior</option>
                             <option value="mid">Mid-level</option>
-                            <option value="quito">Senior</option>
+                            <option value="senior">Senior</option>
                             <option value="lead">Lead</option>
                         </select>
                     </div>
                 </form>
             </section>
-            <article class="type-article">
-                <div class="jobs-listings">
+
+            <article class="type-article jobs-listings">
+                <div>
                     <h3>Ingeniero de DevOps</h3>
                     <small>Cloud Services Sa | Remote</small>
                     <p class="paragraph-article">
@@ -128,10 +130,11 @@
                         automatizacion de procesos y herramientas de integracion
                         continua. Se requiere conocimiento en AWS, Azure
                     </p>
+
+                    <button class="button-apply-job">Aplicar</button>
                 </div>
-                <button class="button-apply-job">Aplicar</button>
             </article>
-            <article class="type-article">
+            <article class="type-article jobs-listings">
                 <div>
                     <h3>Desarrollador de Aplicaciones Móviles</h3>
                     <small>Mobile Apps Ltd.| Mexico</small>
@@ -141,10 +144,12 @@
                         conocimientos en Swift, Kotlin y el desarrollo de
                         interfaces de usuario.
                     </p>
+
+                    <button class="button-apply-job">Aplicar</button>
                 </div>
-                <button class="button-apply-job">Aplicar</button>
             </article>
-            <article class="type-article">
+
+            <article class="type-article jobs-listings">
                 <div>
                     <h3>Ingeniero de Software</h3>
                     <small>Tech Solutions Inc| Remoto</small>
@@ -154,11 +159,12 @@
                         Node.js. El candidato ideal debe ser capaz de trabajar
                         en equipo y tener buenas habilidades de comunicación.
                     </p>
+
+                    <button class="button-apply-job">Aplicar</button>
                 </div>
-                <button class="button-apply-job">Aplicar</button>
             </article>
 
-            <article class="type-article">
+            <article class="type-article jobs-listings">
                 <div>
                     <h3>Analista de Datos</h3>
                     <small>Data Driven Co.| Quito</small>
@@ -168,8 +174,7 @@
                         de visualización. Se requiere conocimiento en SQl,
                         Python y R.
                     </p>
-
-                    <button class="box-button button-apply-job">Aplicar</button>
+                    <button class="button-apply-job">Aplicar</button>
                 </div>
             </article>
 

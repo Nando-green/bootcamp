@@ -41,42 +41,34 @@ body {
     line-height: 1.6;
 }
 
-main > section:nth-child(2) {
-    /* todo el contenedor devJobs*/
-    padding-inline: 1rem;
-    background-color: var(--background);
-    margin-top: 8rem;
-    padding-top: 2rem;
-    & > header {
-        gap: 2px;
-        flex-direction: column;
-        h2 {
-            margin-bottom: 0;
-        }
-        p {
-            opacity: 0.75;
-        }
-    }
-    & > div {
-        max-width: 1280px;
-        margin: 0 auto;
-    }
-}
-
-main > section:nth-child(2) h2 {
-    font-size: 1.875rem;
-    font-weight: 700;
+.title-big {
+    padding-top: 12rem;
+    padding-left: 1rem;
+    font-size: 3rem;
     color: var(--text-primary);
-    margin-bottom: 1rem;
+
+    font-weight: 10rem;
+}
+.main-title {
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    font-size: 10rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-weight: 10 rem;
 }
 
-main > section:nth-child(2) > div > div:first-child > p {
-    font-size: 1.225rem;
-    color: var(--text-muted);
-    max-width: 42rem;
-    margin: 0 auto;
+.main-description {
+    /* todo el contenedor devJobs*/
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+    margin-top: 3rem;
+    padding-top: 1rem;
 }
-main > section:nth-child(2) footer {
+
+.main-footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -139,9 +131,6 @@ footer {
         color: var(--text-primary); /*coloca color gris definido*/
         margin-top: 20px;
     }
-    .title-article {
-        font-weight: 500;
-    }
 }
 
 .principal-title {
@@ -162,21 +151,6 @@ footer {
     text-wrap: balance;
     margin-bottom: 2rem;
     margin-bottom: 2rem;
-}
-
-header {
-    border-bottom: 1px solid var(--border);
-    background: var(--background);
-    padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    .title-header {
-        font-size: 0.75rem;
-        font-weight: 100;
-        color: var(--text-primary);
-    }
 }
 
 .main-title {
