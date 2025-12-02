@@ -276,7 +276,6 @@ form input {
         margin-top: 1rem;
     }
     .search-line {
-        width: 400%;
         max-width: 1280px;
     }
 }
@@ -315,6 +314,12 @@ form input {
     small {
         font-size: 0.875rem;
         opacity: 0.75;
+    }
+    .link-title-job {
+        color: (var(--text-primary));
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 500;
     }
 }
 
@@ -395,12 +400,92 @@ form input {
 
 .job-type {
     display: flex;
-    margin-top: 50px;
-    margin-left: 100px;
-    font-family: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    /*margin: 3rem 0;*/
+    padding-left: 10rem;
+    padding-top: 5rem;
 }
 
-.job-type-elements {
+.style-type-job {
+    background-color: var(--card-bg);
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 1580px;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-align: justify;
+}
+
+.task-job {
+    background-color: var(--card-bg);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    max-width: 1580px;
+    width: 100%;
+}
+
+.marker {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+
+    &.marker-list {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        align-items: center;
+        left: 0;
+        top: 6px;
+        width: 14px;
+        height: 14px;
+        background-image: url("data:image/svg+xml;utf8,<svg width='14' height='14' viewBox='0 0 24 24' fill='%23FFFFFF' stroke='%23FFFFFF' stroke-width='2' xmlns='http://www.w3.org/2000/svg'><circle cx='12' cy='12' r='9' /></svg>");
+        background-repeat: no-repeat;
+        background-size: 12px;
+    }
+}
+.button-type-job {
+    background: #09f;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    font-size: 1rem;
+    white-space: nowrap;
+    margin-top: 1rem;
+
+    &:hover,/* pseudo clase que significa que el raton esta encima*/
+    
+    &:focus {
+        background-color: var(--primary-hover);
+        outline: 2px solid white;
+        outline-offset: 2px;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+    &.is-applied {
+        background: #4caf50;
+        pointer-events: none;
+    }
+}
+
+.title-button {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
