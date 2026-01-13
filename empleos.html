@@ -100,15 +100,15 @@
                             <option value="" selected disabled hidden>
                                 Ubicación
                             </option>
-                            <option value="Remoto">Remoto</option>
-                            <option value="Mexico">Ciudad de Mexico</option>
-                            <option value="Quito">Quito</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="mexico">Ciudad de Mexico</option>
+                            <option value="quito">Quito</option>
                             <option value="bogota">Bogota</option>
                         </select>
                         <select
                             class="style-list"
-                            name="experience-level"
-                            id="experience-level"
+                            name="filter-experience"
+                            id="filter-experience"
                         >
                             <option value="" selected disabled hidden>
                                 Nivel de experiencia
@@ -121,76 +121,82 @@
                     </div>
                 </form>
             </section>
+            <div class="type-article jobs-listings">
+                <article data-mode="remoto">
+                    <div>
+                        <a
+                            class="link-title-job"
+                            href="./tipoempleo.html"
+                            target="_blank"
+                            re="noopener noreferrer"
+                            >Ingeniero de DevOps</a
+                        >
+                        <h3></h3>
 
-            <article data-mode="Remoto" class="type-article jobs-listings">
-                <div>
-                    <a
-                        class="link-title-job"
-                        href="./tipoempleo.html"
-                        target="_blank"
-                        re="noopener noreferrer"
-                        >Ingeniero de DevOps</a
-                    >
-                    <h3></h3>
+                        <small>Cloud Services Sa | Remote</small>
+                        <p class="paragraph-article">
+                            Estamos buscando un ingeniero de DevOps con
+                            experiencia en la gestión de infraestructura en la
+                            nube, automatizacion de procesos y herramientas de
+                            integracion continua. Se requiere conocimiento en
+                            AWS, Azure
+                        </p>
 
-                    <small>Cloud Services Sa | Remote</small>
-                    <p class="paragraph-article">
-                        Estamos buscando un ingeniero de DevOps con experiencia
-                        en la gestión de infraestructura en la nube,
-                        automatizacion de procesos y herramientas de integracion
-                        continua. Se requiere conocimiento en AWS, Azure
-                    </p>
+                        <button class="button-apply-job">Aplicar</button>
+                    </div>
+                </article>
+            </div>
+            <div class="type-article jobs-listings">
+                <article data-mode="mexico">
+                    <div>
+                        <h3>Desarrollador de Aplicaciones Móviles</h3>
+                        <small>Mobile Apps Ltd.| Mexico</small>
+                        <p class="paragraph-article">
+                            Buscamos un desarrollador de aplicaciones móviles
+                            sin experiencia en iOS y/o Android. El candidato
+                            debe tener conocimientos en Swift, Kotlin y el
+                            desarrollo de interfaces de usuario.
+                        </p>
 
-                    <button class="button-apply-job">Aplicar</button>
-                </div>
-            </article>
-            <article data-mode="Mexico" class="type-article jobs-listings">
-                <div>
-                    <h3>Desarrollador de Aplicaciones Móviles</h3>
-                    <small>Mobile Apps Ltd.| Mexico</small>
-                    <p class="paragraph-article">
-                        Buscamos un desarrollador de aplicaciones móviles sin
-                        experiencia en iOS y/o Android. El candidato debe tener
-                        conocimientos en Swift, Kotlin y el desarrollo de
-                        interfaces de usuario.
-                    </p>
+                        <button class="button-apply-job">Aplicar</button>
+                    </div>
+                </article>
+            </div>
+            <div class="type-article jobs-listings">
+                <article data-mode="remoto">
+                    <div>
+                        <h3>Ingeniero de Software</h3>
+                        <small>Tech Solutions Inc| Remoto</small>
+                        <p class="paragraph-article">
+                            Buscamos un ingeniero de software con experiencia en
+                            desarrollo web y conocimientos en JavaScript, React
+                            y Node.js. El candidato ideal debe ser capaz de
+                            trabajar en equipo y tener buenas habilidades de
+                            comunicación.
+                        </p>
 
-                    <button class="button-apply-job">Aplicar</button>
-                </div>
-            </article>
-
-            <article data-mode="Remoto" class="type-article jobs-listings">
-                <div>
-                    <h3>Ingeniero de Software</h3>
-                    <small>Tech Solutions Inc| Remoto</small>
-                    <p class="paragraph-article">
-                        Buscamos un ingeniero de software con experiencia en
-                        desarrollo web y conocimientos en JavaScript, React y
-                        Node.js. El candidato ideal debe ser capaz de trabajar
-                        en equipo y tener buenas habilidades de comunicación.
-                    </p>
-
-                    <button class="button-apply-job">Aplicar</button>
-                </div>
-            </article>
-
-            <article data-mode="Quito" class="type-article jobs-listings">
-                <div>
-                    <h3>Analista de Datos</h3>
-                    <small>Data Driven Co.| Quito</small>
-                    <p class="paragraph-article">
-                        Estamos buscando un analista de datos con experiencia en
-                        el manejo de grandes conjuntos de datos y herramientas
-                        de visualización. Se requiere conocimiento en SQl,
-                        Python y R.
-                    </p>
-                    <button class="button-apply-job">Aplicar</button>
-                </div>
-            </article>
-
+                        <button class="button-apply-job">Aplicar</button>
+                    </div>
+                </article>
+            </div>
+            <div class="type-article jobs-listings">
+                <article data-mode="quito">
+                    <div>
+                        <h3>Analista de Datos</h3>
+                        <small>Data Driven Co.| Quito</small>
+                        <p class="paragraph-article">
+                            Estamos buscando un analista de datos con
+                            experiencia en el manejo de grandes conjuntos de
+                            datos y herramientas de visualización. Se requiere
+                            conocimiento en SQl, Python y R.
+                        </p>
+                        <button class="button-apply-job">Aplicar</button>
+                    </div>
+                </article>
+            </div>
             <nav class="pagination">
-                <a class="pagination-link" href="#"
-                    ><svg
+                <a class="pagination-link" href="#">
+                    <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -203,8 +209,9 @@
                         class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"
                     >
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M15 6l-6 6l6 6" /></svg
-                ></a>
+                        <path d="M15 6l-6 6l6 6" />
+                    </svg>
+                </a>
                 <a class="pagination-link is-active" href="#">1</a>
                 <a class="pagination-link" href="#">2</a>
                 <a class="pagination-link" href="#">3</a>
@@ -224,8 +231,10 @@
                         class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
                     >
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M9 6l6 6l-6 6" /></svg
-                ></a>
+                        <path d="M9 6l6 6l-6 6" />
+                    </svg>
+                    ></a
+                >
             </nav>
         </main>
         <footer>

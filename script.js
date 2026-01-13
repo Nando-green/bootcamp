@@ -11,13 +11,13 @@ jobsListingSection.forEach((section) => {
     });
 });
 
-const filter =
+const technology =
     document.querySelector(
         "#filter-technology"
     ); /*recupera el valor de la lista */
 
-filter.addEventListener("change", function () {
-    console.log(filter.value);
+technology.addEventListener("change", function () {
+    console.log(technology.value);
 });
 
 const location =
@@ -27,6 +27,14 @@ const location =
 
 location.addEventListener("change", function () {
     console.log(location.value);
+});
+const experience =
+    document.querySelector(
+        "#filter-experience"
+    ); /*recupera el valor de la lista */
+
+experience.addEventListener("change", function () {
+    console.log(experience.value);
 });
 
 const searchInput = document.querySelector("#job-search-input");
@@ -52,14 +60,15 @@ document.addEventListener("keydown", function (event) {
         event.key
     ); /*verifica que tecla se presiona*/
 });
+
 const filterjob = document.querySelector("#filter-location");
-const message = document.querySelector("#filter-select-value");
+const message = document.querySelector("#filter-location");
 const jobs = document.querySelectorAll(".job-listings");
 
 filterjob.addEventListener("change", function () {
     const selectedValue = filterjob.value;
     if (selectedValue) {
-        message.textContent = `Has seleccionado:${selectedValue}`;
+        message.textContent = `Has seleccionado: ${selectedValue}`;
     } else {
         message.textContent = "";
     }
