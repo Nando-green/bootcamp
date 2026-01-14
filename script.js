@@ -62,19 +62,29 @@ document.addEventListener("keydown", function (event) {
 });
 
 const filterjob = document.querySelector("#filter-location");
-const message = document.querySelector("#filter-location");
-const jobs = document.querySelectorAll(".job-listings");
+const jobs = document.querySelectorAll(".jobs-listings");
 
 filterjob.addEventListener("change", function () {
     const selectedValue = filterjob.value;
-    if (selectedValue) {
-        message.textContent = `Has seleccionado: ${selectedValue}`;
-    } else {
-        message.textContent = "";
-    }
+
     jobs.forEach((job) => {
-        const mode = job.dataset.mode;
-        if (selectedValue === "" || selectedValue === mode) {
+        const model = job.dataset.model;
+        if (selectedValue === "" || selectedValue === model) {
+            job.style.display = "flex";
+        } else {
+            job.style.display = "none";
+        }
+    });
+});
+const filtertech = document.querySelector("#filter-technology");
+const tech = document.querySelectorAll(".jobs-listings");
+
+filtertech.addEventListener("change", function () {
+    const selectedValue = filtertech.value;
+
+    tech.forEach((job) => {
+        const model = job.dataset.model;
+        if (selectedValue === "" || selectedValue === model) {
             job.style.display = "flex";
         } else {
             job.style.display = "none";
