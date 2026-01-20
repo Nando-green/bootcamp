@@ -76,18 +76,34 @@ filterjob.addEventListener("change", function () {
         }
     });
 });
+
 const filtertech = document.querySelector("#filter-technology");
-const tech = document.querySelectorAll(".jobs-listings");
+const techs = document.querySelectorAll(".jobs-listings");
 
 filtertech.addEventListener("change", function () {
     const selectedValue = filtertech.value;
 
-    tech.forEach((job) => {
-        const model = job.dataset.model;
-        if (selectedValue === "" || selectedValue === model) {
-            job.style.display = "flex";
+    techs.forEach((tech) => {
+        const techno = tech.dataset.techno;
+        if (selectedValue === "" || selectedValue === techno) {
+            tech.style.display = "flex";
         } else {
-            job.style.display = "none";
+            tech.style.display = "none";
+        }
+    });
+});
+const filterexperience = document.querySelector("#filter-experience");
+const exper = document.querySelectorAll(".jobs-listings");
+
+filterexperience.addEventListener("change", function () {
+    const selectedValue = filterexperience.value;
+
+    exper.forEach((exp) => {
+        const experi = exp.dataset.experi;
+        if (selectedValue === "" || selectedValue === experi) {
+            exp.style.display = "flex";
+        } else {
+            exp.style.display = "none";
         }
     });
 });

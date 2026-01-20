@@ -84,9 +84,8 @@
                             name="technology"
                             id="filter-technology"
                         >
-                            <option value="" selected disabled hidden>
-                                Tecnología
-                            </option>
+                            <option value="">Tecnología</option>
+                            <!-- selected disabled hidden // no select option -->
                             <option value="javascript">JavaScript</option>
                             <option value="python">Pyton</option>
                             <option value="java">Java</option>
@@ -97,9 +96,7 @@
                             name="location"
                             id="filter-location"
                         >
-                            <option value="" selected disabled hidden>
-                                Ubicación
-                            </option>
+                            <option value="">Ubicación</option>
                             <option value="remoto">Remoto</option>
                             <option value="mexico">Ciudad de Mexico</option>
                             <option value="quito">Quito</option>
@@ -110,9 +107,7 @@
                             name="experience"
                             id="filter-experience"
                         >
-                            <option value="" selected disabled hidden>
-                                Nivel de experiencia
-                            </option>
+                            <option value="">Nivel de experiencia</option>
                             <option value="junior">Junior</option>
                             <option value="mid">Mid-level</option>
                             <option value="senior">Senior</option>
@@ -121,7 +116,12 @@
                     </div>
                 </form>
             </section>
-            <article data-model="remoto" class="type-article jobs-listings">
+            <article
+                data-model="remoto"
+                data-techno="react"
+                data-experi="senior"
+                class="type-article jobs-listings"
+            >
                 <div>
                     <a
                         class="link-title-job"
@@ -132,7 +132,7 @@
                     >
                     <h3></h3>
 
-                    <small>Cloud Services Sa | Remote</small>
+                    <small>Cloud Services Sa | Remoto | React | Senior</small>
                     <p class="paragraph-article">
                         Estamos buscando un ingeniero de DevOps con experiencia
                         en la gestión de infraestructura en la nube,
@@ -144,10 +144,15 @@
                 </div>
             </article>
 
-            <article data-model="mexico" class="type-article jobs-listings">
+            <article
+                data-model="mexico"
+                data-techno="java"
+                data-experi="lead"
+                class="type-article jobs-listings"
+            >
                 <div>
                     <h3>Desarrollador de Aplicaciones Móviles</h3>
-                    <small>Mobile Apps Ltd.| Mexico</small>
+                    <small>Mobile Apps Ltd.| Mexico | Java | Lead</small>
                     <p class="paragraph-article">
                         Buscamos un desarrollador de aplicaciones móviles sin
                         experiencia en iOS y/o Android. El candidato debe tener
@@ -159,10 +164,18 @@
                 </div>
             </article>
 
-            <article data-model="remoto" class="type-article jobs-listings">
+            <article
+                data-model="remoto"
+                data-techno="javascript"
+                data-experi="junior"
+                class="type-article jobs-listings"
+            >
                 <div>
                     <h3>Ingeniero de Software</h3>
-                    <small>Tech Solutions Inc| Remoto</small>
+                    <small
+                        >Tech Solutions Inc | Remoto | JavaScript |
+                        Junior</small
+                    >
                     <p class="paragraph-article">
                         Buscamos un ingeniero de software con experiencia en
                         desarrollo web y conocimientos en JavaScript, React y
@@ -174,10 +187,15 @@
                 </div>
             </article>
 
-            <article data-model="quito" class="type-article jobs-listings">
+            <article
+                data-model="quito"
+                data-techno="python"
+                data-experi="senior"
+                class="type-article jobs-listings"
+            >
                 <div>
                     <h3>Analista de Datos</h3>
-                    <small>Data Driven Co.| Quito</small>
+                    <small>Data Driven Co.| Quito | Python | Senior</small>
                     <p class="paragraph-article">
                         Estamos buscando un analista de datos con experiencia en
                         el manejo de grandes conjuntos de datos y herramientas

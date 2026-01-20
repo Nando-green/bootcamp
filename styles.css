@@ -284,6 +284,7 @@ form input {
     /*estilo de las listas*/
     display: flex;
     background: #09f; /* color de fondo */
+    background-position: right 0.5rem center;
     color: #fff; /* color del texto */
     border: 2px solid #0d5ba8; /* borde */
     border-radius: 8px; /* esquinas redondeadas */
