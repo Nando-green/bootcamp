@@ -13,7 +13,7 @@ jobsListingSection.forEach((section) => {
 
 const technology =
     document.querySelector(
-        "#filter-technology"
+        "#filter-technology",
     ); /*recupera el valor de la lista */
 
 technology.addEventListener("change", function () {
@@ -22,7 +22,7 @@ technology.addEventListener("change", function () {
 
 const location =
     document.querySelector(
-        "#filter-location"
+        "#filter-location",
     ); /*recupera el valor de la lista */
 
 location.addEventListener("change", function () {
@@ -30,7 +30,7 @@ location.addEventListener("change", function () {
 });
 const experience =
     document.querySelector(
-        "#filter-experience"
+        "#filter-experience",
     ); /*recupera el valor de la lista */
 
 experience.addEventListener("change", function () {
@@ -50,14 +50,14 @@ const searchForm = document.querySelector("#job-search-form");
 searchForm.addEventListener("submit", function (event) {
     /*event.preventDefault()*/
     console.log(
-        "submit"
+        "submit",
     ); /*se verifica el contenido del form atravez del submit*/
 });
 
 document.addEventListener("keydown", function (event) {
     console.log(
         "tecla presionada:",
-        event.key
+        event.key,
     ); /*verifica que tecla se presiona*/
 });
 
@@ -69,11 +69,14 @@ filterjob.addEventListener("change", function () {
 
     jobs.forEach((job) => {
         const model = job.dataset.model;
-        if (selectedValue === "" || selectedValue === model) {
+        const isShown = selectedValue === "" || selectedValue === model;
+        job.classList.toggle("is-hidden", isShown === false);
+
+        /*  if (selectedValue === "" || selectedValue === model) {
             job.style.display = "flex";
         } else {
             job.style.display = "none";
-        }
+        }*/
     });
 });
 
@@ -85,11 +88,8 @@ filtertech.addEventListener("change", function () {
 
     techs.forEach((tech) => {
         const techno = tech.dataset.techno;
-        if (selectedValue === "" || selectedValue === techno) {
-            tech.style.display = "flex";
-        } else {
-            tech.style.display = "none";
-        }
+        const isShown = selectedValue === "" || selectedValue === techno;
+        tech.classList.toggle("is-hidden", isShown === false);
     });
 });
 const filterexperience = document.querySelector("#filter-experience");
@@ -100,10 +100,7 @@ filterexperience.addEventListener("change", function () {
 
     exper.forEach((exp) => {
         const experi = exp.dataset.experi;
-        if (selectedValue === "" || selectedValue === experi) {
-            exp.style.display = "flex";
-        } else {
-            exp.style.display = "none";
-        }
+        const isShown = selectedValue === "" || selectedValue === experi;
+        exp.classList.toggle("is-hidden", isShown === false);
     });
 });
